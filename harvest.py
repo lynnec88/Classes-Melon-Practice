@@ -128,7 +128,7 @@ def get_sellability_report(melons):
         sellable = "CAN BE SOLD" if melon.is_sellable() else "NOT SELLABLE"
         print(f"{harvested_by} from {field_num} ({sellable})")
 
-melon_types = {'yw': ['Yellow Watermelon', 0.99], 'cas': ['Cassaba', 2.99], 'cren': ['Crenshaw', 2.00], 'musk': ['Muskmelon', 0.79]}
+melon_types = {'yw': ['Yellow Watermelon'], 'cas': ['Cassaba'], 'cren': ['Crenshaw'], 'musk': ['Muskmelon']}
 melons = make_melons(melon_types)
 
 get_sellability_report(melons)
